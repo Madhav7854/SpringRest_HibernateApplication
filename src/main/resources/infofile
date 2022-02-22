@@ -1,0 +1,53 @@
+post request :
+
+http://localhost:1500/Payment_Resource_SpringRest_Hibenate/paymentResource/payNow
+   request : 
+   
+   {
+     "transactionId":"TX022022G7637",
+	 "vendor":"phone Pay",
+	"amount":"5250"
+}
+
+--------------------------
+
+get request :
+------------
+http://localhost:1500/Payment_Resource_SpringRest_Hibenate/paymentResource/getTransactionByVendor/phone Pay
+
+-----------------------------
+responce :
+
+{
+    "status": "succes",
+    "payments": [
+        {
+            "id": 4,
+            "transactionId": "TX022022JEG159",
+            "vendor": "phone Pay",
+            "paymentDate": 1645533599000,
+            "amount": 1000.0
+        },
+        {
+            "id": 5,
+            "transactionId": "TX022022JEG788",
+            "vendor": "phone Pay",
+            "paymentDate": 1645533648000,
+            "amount": 1005.0
+        },
+        {
+            "id": 6,
+            "transactionId": "TX022022JEG763",
+            "vendor": "phone Pay",
+            "paymentDate": 1645533666000,
+            "amount": 5500.0
+        },
+        {
+            "id": 7,
+            "transactionId": "TX022022G763",
+            "vendor": "phone Pay",
+            "paymentDate": 1645533682000,
+            "amount": 5250.0
+        }
+    ]
+}
